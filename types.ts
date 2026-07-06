@@ -12,6 +12,7 @@ export interface Content {
     title: string;
     subtitle: string;
     cta: string;
+    donate: string;
   };
   about: {
     title: string;
@@ -86,7 +87,7 @@ export interface Content {
       give: {
         title: string;
         desc: string;
-        pix: string;
+        giving: string;
         btn: string;
       };
       go: {

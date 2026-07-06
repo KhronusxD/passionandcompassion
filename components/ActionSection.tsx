@@ -2,6 +2,7 @@ import React from 'react';
 import { Content } from '../types';
 import { Instagram, Facebook, Mail, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { DONATE_URL } from '../constants';
 
 interface ActionProps {
   text: Content['action'];
@@ -42,11 +43,11 @@ export const ActionSection: React.FC<ActionProps> = ({ text, footerText }) => {
             <h3 className="text-2xl font-bold mb-4 text-white">{text.cards.give.title}</h3>
             <p className="text-white/90 mb-6 h-16 font-medium">{text.cards.give.desc}</p>
             <div className="bg-white/20 p-4 rounded-lg mb-6 backdrop-blur-md">
-              <p className="font-mono text-sm break-all">{text.cards.give.pix}</p>
+              <p className="font-mono text-sm break-all">{text.cards.give.giving}</p>
             </div>
-            <Link to="/doacao" className="w-full inline-block bg-white text-brand-orange font-bold py-3 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center gap-2">
+            <a href={DONATE_URL} target="_blank" rel="noopener noreferrer" className="w-full inline-block bg-white text-brand-orange font-bold py-3 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center gap-2">
               {text.cards.give.btn} <ArrowRight size={18} />
-            </Link>
+            </a>
           </div>
 
           {/* Go Card */}

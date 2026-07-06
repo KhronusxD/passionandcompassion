@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X, Globe } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom'; // Added useLocation
 import { Language, Content } from '../types';
-import { LOGO_URL } from '../constants';
+import { LOGO_URL, DONATE_URL } from '../constants';
 
 interface HeaderProps {
   lang: Language;
@@ -93,12 +93,14 @@ export const Header: React.FC<HeaderProps> = ({ lang, setLang, text }) => {
             <Globe size={14} />
             {lang === 'pt' ? 'EN' : 'PT'}
           </button>
-          <Link
-            to="/doacao"
+          <a
+            href={DONATE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-brand-orange hover:bg-orange-600 text-white text-sm font-bold py-2 px-6 rounded-full transition-transform transform hover:scale-105 shadow-lg"
           >
             {text.partner}
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -135,13 +137,15 @@ export const Header: React.FC<HeaderProps> = ({ lang, setLang, text }) => {
               </Link>
             );
           })}
-          <Link
-            to="/doacao"
+          <a
+            href={DONATE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setIsMobileMenuOpen(false)}
             className="bg-brand-orange text-white text-center font-bold py-3 rounded-lg mt-2"
           >
             {text.partner}
-          </Link>
+          </a>
         </div>
       )}
     </header>

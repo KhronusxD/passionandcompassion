@@ -4,6 +4,9 @@ import { Content, Language } from './types';
 // Since we don't have the file system, we use a text representation or a placeholder
 export const LOGO_URL = "/assets/logo_icon.png";
 
+// Single external destination for all donation CTAs
+export const DONATE_URL = "https://donorbox.org/passion-and-compassion-ministry-donations";
+
 export const TRANSLATIONS: Record<Language, Content> = {
   pt: {
     nav: {
@@ -16,7 +19,8 @@ export const TRANSLATIONS: Record<Language, Content> = {
     hero: {
       title: "Proclamando o Evangelho no Coração da Amazônia",
       subtitle: "Nos últimos 20 anos, temos trabalhado incansavelmente para proclamar o Evangelho, preparar trabalhadores e alcançar os abatidos e oprimidos.",
-      cta: "Conheça Nossa História"
+      cta: "Conheça Nossa História",
+      donate: "Doe Agora"
     },
     about: {
       title: "Uma Jornada de Fé e Milagres",
@@ -115,7 +119,7 @@ export const TRANSLATIONS: Record<Language, Content> = {
     },
     impact: {
       title: "Alcance Global",
-      subtitle: "Da Amazônia para as Nações: Chile, Índia, Escócia e além.",
+      subtitle: "Da Amazônia para as Nações: Índia, Escócia e além.",
       legend: "Expansão Missionária"
     },
     action: {
@@ -123,14 +127,14 @@ export const TRANSLATIONS: Record<Language, Content> = {
       cards: {
         pray: {
           title: "Ore",
-          desc: "Interceda pela Índia (Maharashtra), pelo Chile e por nossos missionários na Escócia.",
+          desc: "Interceda pela Índia (Maharashtra) e por nossos missionários na Escócia.",
           placeholder: "Para receber notícias",
           btn: "Inscrever-se"
         },
         give: {
           title: "Contribua",
           desc: "Agradecemos seu amor e apoio financeiro que tornam tudo isso possível.",
-          pix: "PIX/Email: givingmpc@gmail.com",
+          giving: "Email: givingmpc@gmail.com",
           btn: "Doar Agora"
         },
         go: {
@@ -155,7 +159,8 @@ export const TRANSLATIONS: Record<Language, Content> = {
     hero: {
       title: "Proclaiming the Gospel in the Heart of the Amazon",
       subtitle: "Faith, Theology, and Compassion in action for 20 years transforming lives in Manaus and beyond.",
-      cta: "Discover Our Story"
+      cta: "Discover Our Story",
+      donate: "Donate Now"
     },
     about: {
       title: "A History of Faith and Service",
@@ -228,8 +233,8 @@ export const TRANSLATIONS: Record<Language, Content> = {
         },
         give: {
           title: "Give",
-          desc: "Your resources fuel the Kingdom. Donate via PIX or bank transfer.",
-          pix: "Email for giving: givingmpc@gmail.com",
+          desc: "Your resources fuel the Kingdom. Support the mission through your generosity.",
+          giving: "Email for giving: givingmpc@gmail.com",
           btn: "Donate Now"
         },
         go: {
@@ -241,6 +246,46 @@ export const TRANSLATIONS: Record<Language, Content> = {
     },
     footer: {
       rights: "All rights reserved."
+    },
+    ministriesPage: {
+      hero: {
+        title: "Foundations of Faith and Mission",
+        subtitle: "A vibrant church and schools that prepare workers for the harvest."
+      },
+      church: {
+        title: "Mission Passion and Compassion Church",
+        badge: "Based in Manaus",
+        description: "A family of 600 members united by an unshakable belief in the sovereignty of God and the authority of the Scriptures.",
+        highlights: [
+          "Small Family Groups.",
+          "Christian education for spiritual maturity.",
+          "Worship and Intercession Room (2x per week)."
+        ]
+      },
+      education: {
+        theocidade: {
+          title: "Theocidade Institute",
+          desc: "More than a school; a place where minds are forged in doctrine, church history, and biblical theology. Shaping Christian thinkers.",
+          btn: "Discover the Institute"
+        },
+        ema: {
+          title: "EMA - School of Missions",
+          desc: "The training ground for the front lines. We equip Spirit-filled missionaries to proclaim the gospel in the streets of Manaus, villages, and nations.",
+          btn: "Discover EMA"
+        }
+      },
+      basileia: {
+        title: "Basileia Community",
+        desc: "For the past 5 years, we have intentionally shepherded other pastors and churches. A network of men and women committed to the call of Christ and the care of the body."
+      },
+      info: {
+        title: "Join Us",
+        cards: [
+          { title: "Celebration Services", value: "Sundays at 6pm" },
+          { title: "Prayer Room", value: "Tuesdays and Thursdays" },
+          { title: "Location", value: "Manaus, Amazonas" }
+        ]
+      }
     }
   }
 };
@@ -248,6 +293,5 @@ export const TRANSLATIONS: Record<Language, Content> = {
 export const GLOBAL_COORDINATES = [
   { name: "Manaus", lat: -3.119, lng: -60.021, type: "source" },
   { name: "Scotland", lat: 56.4907, lng: -4.2026, type: "target" },
-  { name: "Chile", lat: -35.6751, lng: -71.543, type: "target" },
   { name: "India", lat: 20.5937, lng: 78.9629, type: "target" },
 ];

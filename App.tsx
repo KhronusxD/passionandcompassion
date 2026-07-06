@@ -10,7 +10,7 @@ import { TRANSLATIONS } from './constants';
 import { Language } from './types';
 
 function App() {
-  const [lang, setLang] = useState<Language>('pt');
+  const [lang, setLang] = useState<Language>('en');
   const content = TRANSLATIONS[lang];
 
   return (

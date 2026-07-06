@@ -59,7 +59,7 @@ export const GlobalImpact: React.FC<GlobalImpactProps> = ({ text }) => {
       .attr("stroke-width", 0.5)
       .attr("stroke-opacity", 0.5);
 
-    // 3. Draw Nodes (Manaus, Scotland, Chile, India)
+    // 3. Draw Nodes (Manaus, Scotland, India)
     const manaus = GLOBAL_COORDINATES.find(c => c.name === "Manaus")!;
     
     // Draw Arcs
