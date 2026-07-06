@@ -70,6 +70,10 @@ export interface Content {
       };
     };
   };
+  videoSection: {
+    title: string;
+    subtitle: string;
+  };
   impact: {
     title: string;
     subtitle: string;

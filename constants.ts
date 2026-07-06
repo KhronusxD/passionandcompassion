@@ -117,6 +117,10 @@ export const TRANSLATIONS: Record<Language, Content> = {
         }
       }
     },
+    videoSection: {
+      title: "Conheça Nossa História",
+      subtitle: "Assista ao vídeo e veja de perto o que Deus tem feito através da nossa missão."
+    },
     impact: {
       title: "Alcance Global",
       subtitle: "Da Amazônia para as Nações: Índia, Escócia e além.",
@@ -216,6 +220,10 @@ export const TRANSLATIONS: Record<Language, Content> = {
           image: "/assets/supia_music.jpg"
         }
       }
+    },
+    videoSection: {
+      title: "Watch Our Story",
+      subtitle: "Press play and see up close what God has been doing through our mission."
     },
     impact: {
       title: "Global Impact",
