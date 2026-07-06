@@ -235,7 +235,7 @@ export const TRANSLATIONS: Record<Language, Content> = {
       cards: {
         pray: {
           title: "Pray",
-          desc: "Sign up to receive prayer requests and news from the mission field.",
+          desc: "Intercede for India (Maharashtra) and for our missionaries in Scotland.",
           placeholder: "Your best email",
           btn: "Subscribe"
         },
@@ -247,7 +247,7 @@ export const TRANSLATIONS: Record<Language, Content> = {
         },
         go: {
           title: "Get Involved",
-          desc: "Feel the call? Learn about our School of Missions and come serve.",
+          desc: "Feel the call? Come and be part of this journey with us.",
           btn: "Learn More"
         }
       }

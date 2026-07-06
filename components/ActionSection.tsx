@@ -1,7 +1,6 @@
 import React from 'react';
 import { Content } from '../types';
 import { Instagram, Facebook, Mail, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { DONATE_URL } from '../constants';
 
 interface ActionProps {
@@ -25,26 +24,13 @@ export const ActionSection: React.FC<ActionProps> = ({ text, footerText }) => {
           {/* Pray Card */}
           <div className="bg-white/10 backdrop-blur-sm border border-white/10 p-8 rounded-2xl hover:bg-white/15 transition-colors text-center">
             <h3 className="text-2xl font-serif font-light mb-4 text-brand-orange">{text.cards.pray.title}</h3>
-            <p className="text-gray-300 mb-6 h-16">{text.cards.pray.desc}</p>
-            <form className="space-y-3" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="email"
-                placeholder={text.cards.pray.placeholder}
-                className="w-full px-4 py-3 rounded-lg bg-black/20 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-brand-orange"
-              />
-              <button className="w-full bg-white text-brand-dark font-bold py-3 rounded-lg hover:bg-gray-100 transition-colors">
-                {text.cards.pray.btn}
-              </button>
-            </form>
+            <p className="text-gray-300">{text.cards.pray.desc}</p>
           </div>
 
           {/* Give Card - Highlighted */}
           <div className="bg-gradient-to-br from-brand-orange to-red-600 p-8 rounded-2xl shadow-2xl transform md:-translate-y-6 text-center">
             <h3 className="text-2xl font-bold mb-4 text-white">{text.cards.give.title}</h3>
-            <p className="text-white/90 mb-6 h-16 font-medium">{text.cards.give.desc}</p>
-            <div className="bg-white/20 p-4 rounded-lg mb-6 backdrop-blur-md">
-              <p className="font-mono text-sm break-all">{text.cards.give.giving}</p>
-            </div>
+            <p className="text-white/90 mb-6 font-medium">{text.cards.give.desc}</p>
             <a href={DONATE_URL} target="_blank" rel="noopener noreferrer" className="w-full inline-block bg-white text-brand-orange font-bold py-3 rounded-lg hover:bg-gray-100 transition-colors flex items-center justify-center gap-2">
               {text.cards.give.btn} <ArrowRight size={18} />
             </a>
@@ -53,10 +39,7 @@ export const ActionSection: React.FC<ActionProps> = ({ text, footerText }) => {
           {/* Go Card */}
           <div className="bg-white/10 backdrop-blur-sm border border-white/10 p-8 rounded-2xl hover:bg-white/15 transition-colors text-center">
             <h3 className="text-2xl font-serif font-light mb-4 text-brand-orange">{text.cards.go.title}</h3>
-            <p className="text-gray-300 mb-6 h-16">{text.cards.go.desc}</p>
-            <Link to="/sobre" className="w-full inline-block border-2 border-white text-white font-bold py-3 rounded-lg hover:bg-white hover:text-brand-dark transition-colors mt-12">
-              {text.cards.go.btn}
-            </Link>
+            <p className="text-gray-300">{text.cards.go.desc}</p>
           </div>
         </div>
 
