@@ -18,7 +18,7 @@ export const TRANSLATIONS: Record<Language, Content> = {
     },
     hero: {
       title: "Proclamando o Evangelho no Coração da Amazônia",
-      subtitle: "Nos últimos 20 anos, temos trabalhado incansavelmente para proclamar o Evangelho, preparar trabalhadores e alcançar os abatidos e oprimidos.",
+      subtitle: "Nos últimos 17 anos, temos trabalhado incansavelmente para proclamar o Evangelho, preparar trabalhadores e alcançar os abatidos e oprimidos.",
       cta: "Conheça Nossa História",
       donate: "Doe Agora"
     },
@@ -26,7 +26,7 @@ export const TRANSLATIONS: Record<Language, Content> = {
       title: "Uma Jornada de Fé e Milagres",
       description1: "Sediada em Manaus, nossa igreja vibrante com cerca de 600 membros é uma família espiritual unida pela crença inabalável na soberania de Deus e na autoridade das Escrituras.",
       description2: "Maravilhamo-nos ao olhar para trás e ver tudo o que o Senhor fez. Estamos saindo do barco e entrando nas águas novamente para um novo capítulo.",
-      stat1: "20+",
+      stat1: "17",
       stat1Label: "Anos de Caminhada",
       stat2: "600+",
       stat2Label: "Membros da Família",
@@ -162,15 +162,15 @@ export const TRANSLATIONS: Record<Language, Content> = {
     },
     hero: {
       title: "Proclaiming the Gospel in the Heart of the Amazon",
-      subtitle: "Faith, Theology, and Compassion in action for 20 years transforming lives in Manaus and beyond.",
+      subtitle: "Faith, Theology, and Compassion in action for 17 years transforming lives in Manaus and beyond.",
       cta: "Discover Our Story",
       donate: "Donate Now"
     },
     about: {
       title: "A History of Faith and Service",
-      description1: "For two decades, Mission Passion and Compassion has been a beacon of hope in the Amazon region. We started with a small prayer group and are now a family of over 600 members actively serving in Manaus.",
+      description1: "For 17 years, Mission Passion and Compassion has been a beacon of hope in the Amazon region. We started with a small prayer group and are now a family of over 600 members actively serving in Manaus.",
       description2: "We are writing a new chapter, expanding our borders to take the love of Christ to isolated river communities and distant nations.",
-      stat1: "20+",
+      stat1: "17",
       stat1Label: "Years of History",
       stat2: "600+",
       stat2Label: "Active Members",
