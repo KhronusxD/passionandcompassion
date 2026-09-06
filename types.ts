@@ -1,5 +1,11 @@
 export type Language = 'pt' | 'en';
 
+export interface ProjectCard {
+  title: string;
+  desc: string;
+  image?: string;
+}
+
 export interface Content {
   nav: {
     about: string;
@@ -52,23 +58,10 @@ export interface Content {
   socialProjects: {
     title: string;
     description: string;
-    cards: {
-      casa: {
-        title: string;
-        desc: string;
-        image?: string;
-      };
-      timbo: {
-        title: string;
-        desc: string;
-        image?: string;
-      };
-      supia: {
-        title: string;
-        desc: string;
-        image?: string;
-      };
-    };
+    missionsTitle: string;
+    socialTitle: string;
+    missions: ProjectCard[];
+    social: ProjectCard[];
   };
   videoSection: {
     title: string;

@@ -18,39 +18,39 @@ export const TRANSLATIONS: Record<Language, Content> = {
     },
     hero: {
       title: "Proclamando o Evangelho no Coração da Amazônia",
-      subtitle: "Nos últimos 17 anos, temos trabalhado incansavelmente para proclamar o Evangelho, preparar trabalhadores e alcançar os abatidos e oprimidos.",
+      subtitle: "Fé, Teologia e Compaixão em ação há mais de 20 anos, transformando vidas no Brasil e além.",
       cta: "Conheça Nossa História",
       donate: "Doe Agora"
     },
     about: {
-      title: "Uma Jornada de Fé e Milagres",
-      description1: "Sediada em Manaus, nossa igreja vibrante com cerca de 600 membros é uma família espiritual unida pela crença inabalável na soberania de Deus e na autoridade das Escrituras.",
-      description2: "Maravilhamo-nos ao olhar para trás e ver tudo o que o Senhor fez. Estamos saindo do barco e entrando nas águas novamente para um novo capítulo.",
-      stat1: "17",
-      stat1Label: "Anos de Caminhada",
+      title: "Uma História de Fé e Serviço",
+      description1: "A Missão Paixão e Compaixão tem sido um farol de esperança na região amazônica, começando com uma pequena reunião numa sala de estar que se transformou numa família de mais de 600 membros ativos servindo a Cristo em Manaus.",
+      description2: "Ao longo dos anos, nossa história se estendeu para além de Manaus, alcançando as comunidades ribeirinhas isoladas da Amazônia e, então, nações distantes.",
+      stat1: "20+",
+      stat1Label: "anos de História",
       stat2: "600+",
       stat2Label: "Membros da Família",
-      allianceTitle: "Comunidade Basileia",
-      allianceDesc: "Pastoreamos intencionalmente outros pastores e igrejas que nos alcançaram. A Comunidade Basileia nasceu dessa união de corações comprometidos com o chamado de Cristo."
+      allianceTitle: "Justiça Social",
+      allianceDesc: "A Missão Paixão e Compaixão é profundamente comprometida com a Justiça Social Bíblica. Isso inclui ação social e missionária em diversas formas. É nosso desejo levar o Evangelho e a dignidade humana a todos."
     },
     pillars: {
       title: "Fé Enraizada na Verdade",
       cards: {
         education: {
-          title: "Instituto Theocidade",
-          desc: "Mais do que uma escola; um lugar onde mentes e corações são forjados com a Palavra de Deus, profundidade doutrinária e história da igreja.",
+          title: "Educação",
+          desc: "Formando líderes através do Instituto Theocidade (Seminário Bíblico) e da EMA, nossa escola de missões. Cremos que o conhecimento teológico e missionário sólido é a base para a transformação duradoura.",
           sub: "Seminário Teológico",
           image: "/assets/theocidade.jpg"
         },
         social: {
-          title: "Adoração e Intercessão",
-          desc: "Uma sala de adoração ativa duas vezes por semana, onde elevamos incenso ao Senhor e intercedemos por nossa cidade com louvor e oração.",
+          title: "Ação Social",
+          desc: "Demonstrando o amor de Deus por meio de projetos como a Casa dos Filhos, ações esportivas, distribuição de cestas básicas e assistência psicológica e social.",
           sub: "Vida Espiritual",
           image: "/assets/worship.jpg"
         },
         missions: {
-          title: "EMA - Escola de Missões",
-          desc: "Nosso campo de treinamento para a linha de frente. Equipamos missionários e avivalistas para proclamar o evangelho com ousadia.",
+          title: "Missões",
+          desc: "É nosso desejo não apenas anunciar o Evangelho, mas preparar e capacitar outros para serem luz num mundo em trevas. Do coração da floresta em Manaus e das comunidades ribeirinhas até os confins da terra, cremos numa igreja missionária.",
           sub: "Treinamento Prático",
           image: "/assets/ema.jpg"
         }
@@ -97,25 +97,45 @@ export const TRANSLATIONS: Record<Language, Content> = {
       }
     },
     socialProjects: {
-      title: "Projetos Sociais & Ribeirinhos",
-      description: "Alcançando de forma tangível, como testemunhos de Cristo, os abatidos e os oprimidos.",
-      cards: {
-        casa: {
-          title: "Casa dos Filhos",
-          desc: "Um farol de esperança em Manaus para 60 crianças em risco. Oferecemos apoio educacional, refeições e a afirmação de que são amadas pelo Criador.",
-          image: "/assets/casa_dos_filhos.jpg"
-        },
-        timbo: {
-          title: "Base Timbó",
+      title: "Nossos Projetos",
+      description: "Transformando realidades por meio do amor prático e do Evangelho — em missões e ação social.",
+      missionsTitle: "Projetos de Missões",
+      socialTitle: "Projetos Sociais",
+      missions: [
+        {
+          title: "Base Amazônica Timbó",
           desc: "Mulheres usam tesouros da floresta para criar artesanato, encontrando renda e, mais importante, sua identidade e dignidade em Cristo.",
           image: "/assets/timbo_kids.jpg"
         },
-        supia: {
-          title: "Base Supiá",
-          desc: "Usamos a música como ponte para alcançar corações de crianças e jovens, ensinando a Palavra e aulas de crescimento espiritual.",
+        {
+          title: "Base Amazônica Supiá",
+          desc: "Usamos a música como ponte para alcançar corações de crianças e jovens, ensinando a Palavra e o crescimento espiritual.",
           image: "/assets/supia_music.jpg"
+        },
+        {
+          title: "Missões na Índia",
+          desc: "Nossos missionários servindo e anunciando o Evangelho em Maharashtra, Índia."
+        },
+        {
+          title: "Missões na Escócia",
+          desc: "Nossos missionários levando o Evangelho a comunidades na Escócia."
         }
-      }
+      ],
+      social: [
+        {
+          title: "Casa dos Filhos",
+          desc: "Um farol de esperança em Manaus para crianças em risco. Oferecemos apoio educacional, refeições e a afirmação de que são amadas pelo Criador.",
+          image: "/assets/casa_dos_filhos.jpg"
+        },
+        {
+          title: "Projeto Madalena",
+          desc: "Restaurando dignidade e esperança a mulheres por meio do cuidado, da comunidade e do amor de Cristo."
+        },
+        {
+          title: "Departamento de Assistência Social",
+          desc: "Assistência psicológica e social, distribuição de cestas básicas e cuidado prático para famílias em necessidade."
+        }
+      ]
     },
     videoSection: {
       title: "Conheça Nossa História",
@@ -162,64 +182,84 @@ export const TRANSLATIONS: Record<Language, Content> = {
     },
     hero: {
       title: "Proclaiming the Gospel in the Heart of the Amazon",
-      subtitle: "Faith, Theology, and Compassion in action for 17 years transforming lives in Manaus and beyond.",
+      subtitle: "Faith, Theology, and Compassion in action for over 20 years transforming lives in Brazil and beyond.",
       cta: "Discover Our Story",
       donate: "Donate Now"
     },
     about: {
       title: "A History of Faith and Service",
-      description1: "For 17 years, Mission Passion and Compassion has been a beacon of hope in the Amazon region. We started with a small prayer group and are now a family of over 600 members actively serving in Manaus.",
-      description2: "We are writing a new chapter, expanding our borders to take the love of Christ to isolated river communities and distant nations.",
-      stat1: "17",
-      stat1Label: "Years of History",
+      description1: "Mission Passion and Compassion has been a beacon of hope in the Amazon region, beginning with a small meeting in a living room that has transformed into a family of over 600 active members serving Christ in Manaus.",
+      description2: "Over the years our story has extended beyond Manaus and into the isolated river communities of the Amazon and then to distant nations.",
+      stat1: "20+",
+      stat1Label: "years of History",
       stat2: "600+",
       stat2Label: "Active Members",
-      allianceTitle: "Alliance Project: Expansion & Unity",
-      allianceDesc: "Through the Alliance Project, we integrate efforts to build churches, nutrition centers, and schools in remote areas. It is our practical response to reach places where the Gospel and human dignity need to flourish."
+      allianceTitle: "Social Justice",
+      allianceDesc: "Mission Passion and Compassion is deeply committed to Biblical Social Justice. This includes social and missional outreach in various forms. It is our desire to bring the Gospel and human dignity to all."
     },
     pillars: {
       title: "Our Pillars",
       cards: {
         education: {
           title: "Education",
-          desc: "Training leaders through Theocidade Institute & EMA. We believe solid theological knowledge is the foundation for lasting transformation.",
+          desc: "Training leaders through the Theocidade Institute Bible Seminary & EMA, our missions school. We believe solid theological and missional knowledge is the foundation for lasting transformation.",
           sub: "Focus: Theology & Training",
           image: "/assets/theocidade.jpg"
         },
         social: {
           title: "Social Action",
-          desc: "The 'Casa dos Filhos' offers refuge and support for at-risk children, demonstrating God's love through practical care.",
+          desc: "Demonstrating God's love through projects such as Casa dos Filhos, sports-themed outreaches, distribution of food baskets, & psychological and social assistance.",
           sub: "Focus: Children & Community",
           image: "/assets/worship.jpg"
         },
         missions: {
           title: "Missions",
-          desc: "From the heart of the forest in Timbó and Supiá to the ends of the earth. We bring the good news where it hasn't been heard yet.",
+          desc: "It is our desire to not only spread the Gospel, but to prepare and capacitate others to be a light in a dark world. From the heart of the rain forest in Manaus and river communities to the ends of the earth, we believe in a missional church.",
           sub: "Focus: River Communities & Global",
           image: "/assets/ema.jpg"
         }
       }
     },
     socialProjects: {
-      title: "Social & River Projects",
-      description: "Transforming realities through practical love and opportunity.",
-      cards: {
-        casa: {
-          title: "Children's House",
-          desc: "In Manaus, we serve 60 at-risk children with educational, nutritional, and spiritual support, changing destinies.",
-          image: "/assets/casa_dos_filhos.jpg"
-        },
-        timbo: {
-          title: "Timbó Base",
+      title: "Our Projects",
+      description: "Transforming realities through practical love and the Gospel — in missions and social action.",
+      missionsTitle: "Missions Projects",
+      socialTitle: "Social Projects",
+      missions: [
+        {
+          title: "Timbó Amazon Base",
           desc: "Empowering river community women through handicrafts, generating income and dignity for entire families.",
           image: "/assets/timbo_kids.jpg"
         },
-        supia: {
-          title: "Supiá Base",
+        {
+          title: "Supiá Amazon Base",
           desc: "Music project as a cultural bridge to reach river youth, developing talents and character.",
           image: "/assets/supia_music.jpg"
+        },
+        {
+          title: "India Missions",
+          desc: "Our missionaries serving and sharing the Gospel in Maharashtra, India."
+        },
+        {
+          title: "Scotland Missions",
+          desc: "Our missionaries taking the Gospel to communities in Scotland."
         }
-      }
+      ],
+      social: [
+        {
+          title: "Casa dos Filhos",
+          desc: "In Manaus, we serve at-risk children with educational, nutritional, and spiritual support, changing destinies.",
+          image: "/assets/casa_dos_filhos.jpg"
+        },
+        {
+          title: "Madalena Project",
+          desc: "Restoring dignity and hope to women through care, community, and the love of Christ."
+        },
+        {
+          title: "Social Assistance Department",
+          desc: "Psychological and social assistance, food-basket distribution, and practical care for families in need."
+        }
+      ]
     },
     videoSection: {
       title: "Watch Our Story",

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Content } from '../types';
-import { Users } from 'lucide-react';
+import { Scale } from 'lucide-react';
 
 interface AboutProps {
   text: Content['about'];
@@ -36,11 +36,11 @@ export const About: React.FC<AboutProps> = ({ text }) => {
               </div>
             </div>
 
-            {/* Projeto Aliança Block */}
+            {/* Social Justice Block */}
             <div className="bg-orange-50 p-6 rounded-xl border border-orange-100 transition-transform hover:-translate-y-1 duration-300">
               <div className="flex items-center gap-3 mb-3">
                 <div className="bg-brand-orange text-white p-2 rounded-lg">
-                  <Users size={20} />
+                  <Scale size={20} />
                 </div>
                 <h3 className="text-xl font-bold text-brand-dark">{text.allianceTitle}</h3>
               </div>
