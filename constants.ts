@@ -114,11 +114,13 @@ export const TRANSLATIONS: Record<Language, Content> = {
         },
         {
           title: "Missões na Índia",
-          desc: "Nossos missionários servindo e anunciando o Evangelho em Maharashtra, Índia."
+          desc: "Nossos missionários servindo e anunciando o Evangelho em Maharashtra, Índia.",
+          image: "/assets/india_missions.png"
         },
         {
           title: "Missões na Escócia",
-          desc: "Nossos missionários levando o Evangelho a comunidades na Escócia."
+          desc: "Nossos missionários levando o Evangelho a comunidades na Escócia.",
+          image: "/assets/scotland_missions.jpg"
         }
       ],
       social: [
@@ -129,11 +131,13 @@ export const TRANSLATIONS: Record<Language, Content> = {
         },
         {
           title: "Projeto Madalena",
-          desc: "Restaurando dignidade e esperança a mulheres por meio do cuidado, da comunidade e do amor de Cristo."
+          desc: "Restaurando dignidade e esperança a mulheres por meio do cuidado, da comunidade e do amor de Cristo.",
+          image: "/assets/madalena_project.jpg"
         },
         {
           title: "Departamento de Assistência Social",
-          desc: "Assistência psicológica e social, distribuição de cestas básicas e cuidado prático para famílias em necessidade."
+          desc: "Assistência psicológica e social, distribuição de cestas básicas e cuidado prático para famílias em necessidade.",
+          image: "/assets/social_assistance.png"
         }
       ]
     },
@@ -238,11 +242,13 @@ export const TRANSLATIONS: Record<Language, Content> = {
         },
         {
           title: "India Missions",
-          desc: "Our missionaries serving and sharing the Gospel in Maharashtra, India."
+          desc: "Our missionaries serving and sharing the Gospel in Maharashtra, India.",
+          image: "/assets/india_missions.png"
         },
         {
           title: "Scotland Missions",
-          desc: "Our missionaries taking the Gospel to communities in Scotland."
+          desc: "Our missionaries taking the Gospel to communities in Scotland.",
+          image: "/assets/scotland_missions.jpg"
         }
       ],
       social: [
@@ -253,11 +259,13 @@ export const TRANSLATIONS: Record<Language, Content> = {
         },
         {
           title: "Madalena Project",
-          desc: "Restoring dignity and hope to women through care, community, and the love of Christ."
+          desc: "Restoring dignity and hope to women through care, community, and the love of Christ.",
+          image: "/assets/madalena_project.jpg"
         },
         {
           title: "Social Assistance Department",
-          desc: "Psychological and social assistance, food-basket distribution, and practical care for families in need."
+          desc: "Psychological and social assistance, food-basket distribution, and practical care for families in need.",
+          image: "/assets/social_assistance.png"
         }
       ]
     },
