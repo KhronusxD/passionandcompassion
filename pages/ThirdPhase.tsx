@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, ArrowRight } from 'lucide-react';
+import { Heart, ArrowRight, Play } from 'lucide-react';
 import { DONATE_URL, LOGO_URL } from '../constants';
 
 export const ThirdPhase: React.FC = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [started, setStarted] = useState(false);
+
+  const handleStart = () => {
+    const v = videoRef.current;
+    if (v) {
+      v.currentTime = 0; // restart from the beginning
+      v.muted = false;
+      v.play().catch(() => {});
+    }
+    setStarted(true);
+  };
+
   return (
     <section className="relative min-h-screen overflow-hidden bg-[#141414] text-white flex flex-col">
       {/* Top accent bar */}
@@ -51,13 +64,34 @@ export const ThirdPhase: React.FC = () => {
             style={{ paddingBottom: '56.25%' }}
           >
             <video
-              className="absolute inset-0 w-full h-full bg-black"
+              ref={videoRef}
+              className="absolute inset-0 w-full h-full bg-black object-cover"
               src="/assets/hillary_mensagem3.mp4"
               poster="/assets/hillary_poster.jpg"
-              controls
+              autoPlay
+              muted={!started}
+              loop={!started}
               playsInline
-              preload="metadata"
+              preload="auto"
+              controls={started}
             />
+
+            {/* Cover overlay (teaser plays muted behind) */}
+            {!started && (
+              <button
+                type="button"
+                onClick={handleStart}
+                aria-label="Watch the video"
+                className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-5 bg-black/45 hover:bg-black/35 transition-colors cursor-pointer group"
+              >
+                <span className="flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-brand-orange text-white shadow-2xl shadow-black/40 transition-transform group-hover:scale-110">
+                  <Play size={38} className="fill-white ml-1.5" />
+                </span>
+                <span className="text-2xl md:text-3xl font-bold tracking-tight drop-shadow-lg">
+                  Watch the Video
+                </span>
+              </button>
+            )}
           </div>
         </div>
 
