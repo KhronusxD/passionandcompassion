@@ -6,6 +6,7 @@ import { About } from './pages/About';
 import { Ministries } from './pages/Ministries';
 import { Projects } from './pages/Projects';
 import { Donate } from './pages/Donate';
+import { ThirdPhase } from './pages/ThirdPhase';
 import { TRANSLATIONS } from './constants';
 import { Language } from './types';
 
@@ -23,6 +24,8 @@ function App() {
           <Route path="projetos" element={<Projects content={content} />} />
           <Route path="doacao" element={<Donate content={content} />} />
         </Route>
+        {/* Standalone landing (no header/footer) */}
+        <Route path="/third-phase" element={<ThirdPhase />} />
       </Routes>
     </BrowserRouter>
   );
