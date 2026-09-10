@@ -66,8 +66,8 @@ export const ThirdPhase: React.FC = () => {
             <video
               ref={videoRef}
               className="absolute inset-0 w-full h-full bg-black object-cover"
-              src="/assets/hillary_mensagem3.mp4"
-              poster="/assets/hillary_poster.jpg"
+              src="/assets/hillary_mensagem3_v2.mp4"
+              poster="/assets/hillary_poster_v2.jpg"
               autoPlay
               muted={!started}
               loop={!started}
